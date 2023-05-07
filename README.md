@@ -56,7 +56,7 @@ Description：这是本人的本科毕业论文，创建一个仓库以共享源
 
 六组实验数据的输出结果：
 
-![Circle](\Asset\Circle.png)
+![Circle](https://github.com/TY-Oliver/Undergraduate-Thesis/blob/master/Asset/Circle.png)
 
 ## 尺度恢复
 
