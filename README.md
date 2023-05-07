@@ -25,7 +25,7 @@ Description：这是本人的本科毕业论文，创建一个仓库以共享源
 
 ## 盆口圆拟合
 
-[PCL编写的代码](https://github.com/TY-Oliver/Undergraduate-Thesis/master/1_Fit_Circle/main.cpp)
+[PCL编写的代码](https://github.com/TY-Oliver/Undergraduate-Thesis/blob/master/1_Fit_Circle/main.cpp)
 
 使用方法：
 
@@ -62,7 +62,7 @@ Description：这是本人的本科毕业论文，创建一个仓库以共享源
 ## 尺度恢复
 
 
-[PCL编写的代码](https://github.com/TY-Oliver/Undergraduate-Thesis/master/2_ScaleRecover/main.cpp)
+[PCL编写的代码](https://github.com/TY-Oliver/Undergraduate-Thesis/blob/master/2_ScaleRecover/main.cpp)
 
 使用方法：
 
@@ -82,7 +82,9 @@ Description：这是本人的本科毕业论文，创建一个仓库以共享源
 
 
 ## 欧式聚类
-[PCL编写的代码](https://github.com/TY-Oliver/Undergraduate-Thesis/master/3_EuclideanCluster/main.cpp)
+
+[PCL编写的代码](https://github.com/TY-Oliver/Undergraduate-Thesis/blob/master/3_EuclideanCluster/main.cpp))
+
 
 使用方法：
 
