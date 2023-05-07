@@ -8,7 +8,7 @@ Description：这是本人的本科毕业论文，创建一个仓库以共享源
 
 ## 研究过程
 
-![LiuCheng](C:\Users\Oliver\Desktop\UT\Asset\LiuCheng.png)
+![LiuCheng](https://github.com/TY-Oliver/Undergraduate-Thesis/blob/master/Asset/LiuCheng.png)
 
 ## 三维重建
 1. 拍摄图片：左图是半球形拍摄的角度，右图是拍摄所得到的图片示例
@@ -20,12 +20,12 @@ Description：这是本人的本科毕业论文，创建一个仓库以共享源
 
 3. 重建得到的六组数据
 
-   ![OriData4](\Asset\OriData4.png)
+   ![OriData4](https://github.com/TY-Oliver/Undergraduate-Thesis/blob/master/Asset/OriData4.png)
 
 
 ## 盆口圆拟合
 
-[PCL编写的代码](1_Fit_Circle/main.cpp)
+[PCL编写的代码](https://github.com/TY-Oliver/Undergraduate-Thesis/blob/master/1_Fit_Circle/main.cpp)
 
 使用方法：
 
@@ -60,7 +60,8 @@ Description：这是本人的本科毕业论文，创建一个仓库以共享源
 
 ## 尺度恢复
 
-[PCL编写的代码](2_ScaleRecover/main.cpp)
+
+[PCL编写的代码](https://github.com/TY-Oliver/Undergraduate-Thesis/blob/master/2_ScaleRecover/main.cpp)
 
 使用方法：
 
