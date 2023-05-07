@@ -2,7 +2,7 @@
 #include <pcl/sample_consensus/sac_model_circle3d.h>
 #include <pcl/sample_consensus/ransac.h>
 #include <pcl/filters/extract_indices.h>
-#include <pcl/console/parse.h>
+#include <pcl/console/parse.h> // 参数粘贴需要
 #include <pcl/io/pcd_io.h>
 #include <pcl/io/ply_io.h>
 #include <pcl/point_types.h>
@@ -15,7 +15,7 @@
 #include <iostream>
 #include <thread>
 
-using namespace pcl::console;
+using namespace pcl::console; // 参数粘贴需要，命名空间的概念最好学习一下
 using namespace std::chrono_literals;
 
 int main(int argc, char* argv[]){
@@ -23,23 +23,18 @@ int main(int argc, char* argv[]){
 
   //输出参考信息
   if (argc < 2){
-    std::cerr << ".exe xx.pcd -dt 0.02 -MinS 1 -MaxS 250000               "       << std::endl;			
-    std::cerr << "            -d      Set the maximum distance between classes"    << std::endl;
-    std::cerr << "            -MinS   0 unused passfilter; 1 means used"             << std::endl;
-    std::cerr << "            -MaxS   Set the upper limit of pass through filtering" << std::endl;
+    std::cerr << "Fit_Circle.exe xx.pcd -dt 0.02                    "       << std::endl;			
+    std::cerr << "            -dt      Set Distance Threshold"    << std::endl;
+
 
     system("pause");
 		return (0);
 	}
 
   //参数赋值
-	float DistanceThreshold = 0.02;            // 类间最大距离，单位：m
-  int   MinSize = 1;                // 聚类中包含的最少点云数目
-  int   MaxSize = 250000;           // 聚类中包含的最多点云数目
-
+	float DistanceThreshold = 0.02;                         // 类间最大距离，单位：m
 	parse_argument(argc, argv, "-dt" , DistanceThreshold);	//设置类间最大距离，单位：m
-	parse_argument(argc, argv, "-MinS", MinSize);	//设置聚类中包含的最少点云数目
-	parse_argument(argc, argv, "-MaxS", MaxSize);	//设置聚类中包含的最多点云数目
+
 
   // 变量初始化
   pcl::PCDReader reader;
