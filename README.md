@@ -36,6 +36,7 @@ Description：这是本人的本科毕业论文，创建一个仓库以共享源
    ```
     Fit_Circle.exe 1.pcd -dt 0.02
    ```
+   -dt：RANSAC三维圆拟合的内点范围，单位：米
 
 3. 输出
 
@@ -72,6 +73,57 @@ Description：这是本人的本科毕业论文，创建一个仓库以共享源
    ```
    Scale_Recovery.exe Cloud.pcd -OriginalScale 0.062 -CurrentScale 0.20937
    ```
-
+   -OriginalScale：原始的尺度，即参照物的实际大小，单位：米
+   
+   -CurrentScale：原点云的尺度，即参照物的点云大小，单位：米
+   
 3. 输出：会在当前路径下生成一个文件“RecoveryCloud.pcd”
 
+
+
+## 欧式聚类
+[PCL编写的代码](https://github.com/TY-Oliver/Undergraduate-Thesis/blob/master/3_EuclideanCluster/main.cpp)
+
+使用方法：
+
+1. CMD运行
+
+   ```
+   Euclidean_Cluster.exe 1_cluster.pcd -d 0.02 -MinS 1 -MaxS 250000
+   ```
+
+   -d：欧式聚类类间最小间距
+
+   -MinS：最小类包含点数
+
+   -MaxS：最大类包含点数
+
+2. 输出：程序自动创建一个Cluster文件夹，里面存放各个类的点云
+
+3. 手动挑选出与叶片相关的，合并成同一类。
+
+<img src="/Asset/PrePro.png">
+
+
+## 区域生长分割
+[PCL编写的代码](https://github.com/TY-Oliver/Undergraduate-Thesis/blob/master/4_RegionGrowth/main.cpp)
+
+使用方法：
+
+1. CMD运行
+
+   ```
+   RegionGrowth.exe 1_cluster.pcd -kn 50 -st 30 -ct 0.05
+   ```
+
+   -kn：K近邻搜索范围的点的个数
+
+   -st：平滑阈值——检验法向量的夹角，单位：弧度
+
+   -ct：曲率阈值
+
+2. 输出：程序自动创建一个RegionGrowth文件夹，里面存放各个类的点云
+
+3. CloudCompare手动挑选出分割出来的叶片，上色
+
+<img src="/Asset/Result.png">
