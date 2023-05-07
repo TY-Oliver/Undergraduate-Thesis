@@ -20,7 +20,7 @@ Description：这是本人的本科毕业论文，创建一个仓库以共享源
 
 3. 重建得到的六组数据
 
-   ![OriData4](https://github.com/TY-Oliver/Undergraduate-Thesis/master/Asset/OriData4.png)
+   ![OriData4](https://github.com/TY-Oliver/Undergraduate-Thesis/blob/master/Asset/OriData4.png)
 
 
 ## 盆口圆拟合
