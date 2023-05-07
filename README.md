@@ -106,7 +106,7 @@ Description：这是本人的本科毕业论文，创建一个仓库以共享源
 
 
 ## 区域生长分割
-[PCL编写的代码](https://github.com/TY-Oliver/Undergraduate-Thesis/master/4_RegionGrowth/main.cpp)
+[PCL编写的代码](https://github.com/TY-Oliver/Undergraduate-Thesis/blob/master/4_RegionGrowth/RegionGrowth.cpp)
 
 使用方法：
 
