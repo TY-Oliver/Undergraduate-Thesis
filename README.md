@@ -129,3 +129,7 @@ Description：这是本人的本科毕业论文，创建一个仓库以共享源
 3. CloudCompare手动挑选出分割出来的叶片，上色
 
 <img src="/Asset/Result.png">
+
+## 结论
+
+大学本科四年就此画上句号
